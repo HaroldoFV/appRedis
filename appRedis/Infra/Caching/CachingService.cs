@@ -7,7 +7,7 @@ public class CachingService : ICachingService
     private readonly IDistributedCache _cache;
     private readonly DistributedCacheEntryOptions _options;
 
-    public CachingService(IDistributedCache cache, DistributedCacheEntryOptions options)
+    public CachingService(IDistributedCache cache)
     {
         _cache = cache;
 
